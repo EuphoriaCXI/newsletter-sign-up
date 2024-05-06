@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+
+  <body>
+    <main>
+      <div class="project__container">
+        <!-- Images -->
+        <div class="newsletter__sign-up--image">
+          <picture>
+            <source
+              srcset="/assets/images/illustration-sign-up-desktop.svg"
+              media="(min-width: 600px)"
+            />
+            <img
+              src="/assets/images/illustration-sign-up-mobile.svg"
+              alt="An image showing data relating to a succesful operation"
+            />
+          </picture>
+        </div>
+
+        <div class="newsletter__sign-up--container">
+          <!-- Content -->
+          <div class="newsletter__sign-up--content">
+            <div class="content__heading">
+              <h1>Stay updated!</h1>
+            </div>
+            <div class="content__cta">
+              <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            </div>
+            <div class="content__benefits">
+              <ul>
+                <li>Product discovery and building what matters</li>
+                <li>Measuring to ensure updates are a success</li>
+                <li>And much more!</li>
+              </ul>
+            </div>
+            <div class="content__email"></div>
+          </div>
+
+          <div class="newsletter__sign-up--form">
+            <!-- Sign-up form start -->
+            <form>
+              <p>Email address</p>
+              <label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="on"
+                  placeholder="email@company.com"
+                />
+              </label>
+              <button class="success__button" type="submit">
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+
+            <!-- Sign-up form end -->
+            <div class="form__success hidden">
+              <div class="form__heading">
+                <h1>Thanks for subscribing!</h1>
+              </div>
+              <div class="form__message">
+                <p>
+                  A confirmation email has been sent to ash@loremcompany.com.
+                  Please open it and click the button inside to confirm your
+                  subscription. Dismiss message
+                </p>
+              </div>
+              <button class="dismiss__button" type="button">
+                Dismiss message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="/assets/javascript/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+:root {
+  /* Primary */
+  --Tomato: hsl(4, 100%, 67%);
+  /* Neutral */
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(243, 28%, 13%, 25%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/assets/fonts/Roboto-Bold.ttf");
+}
+
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Reuseable components */
+.hidden {
+  display: none;
+}
+
+/* Body */
+body {
+  font-family: Roboto-Regular;
+  color: var(--Dark-Slate-Grey);
+}
+
+/* Sign Up - Image */
+.newsletter__sign-up--image picture img {
+  width: 100%;
+}
+
+/* Sign Up - Content */
+.newsletter__sign-up--container {
+  padding: 40px 24px;
+}
+
+.content__heading h1 {
+  font-family: Roboto-Bold;
+  font-size: 40px;
+}
+
+.content__cta,
+.content__benefits {
+  padding-top: 24px;
+}
+
+.content__benefits ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 10px;
+}
+
+.content__benefits ul li:last-child {
+  margin-bottom: 0;
+}
+
+.content__benefits ul li::before {
+  content: "";
+  background-image: url(/assets/images/icon-success.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+}
+
+/* Sign Up - Form */
+.newsletter__sign-up--form {
+  padding-top: 40px;
+}
+
+.newsletter__sign-up--form form p {
+  font-family: Roboto-Bold;
+  font-size: 13px;
+  color: var(--Dark-Slate-Grey);
+}
+
+.newsletter__sign-up--form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter__sign-up--form input {
+  margin-top: 8px;
+  padding: 1rem;
+  border: 1px solid var(--Grey);
+  border-radius: 7px;
+}
+
+.success__button {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  border: 1px solid var(--Dark-Slate-Grey);
+  border-radius: 7px;
+  width: 100%;
+}
