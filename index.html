@@ -3,17 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
     <link rel="stylesheet" href="/assets/css/style.css" />
 
-    <title>
-      Frontend Mentor | Newsletter sign-up form with success message
-    </title>
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   </head>
 
   <body>
@@ -65,27 +58,26 @@
                   placeholder="email@company.com"
                 />
               </label>
-              <button class="success__button" type="submit">
-                Subscribe to monthly newsletter
-              </button>
+              <button class="success__button" type="submit">Subscribe to monthly newsletter</button>
             </form>
-
-            <!-- Sign-up form end -->
-            <div class="form__success hidden">
-              <div class="form__heading">
-                <h1>Thanks for subscribing!</h1>
-              </div>
-              <div class="form__message">
-                <p>
-                  A confirmation email has been sent to ash@loremcompany.com.
-                  Please open it and click the button inside to confirm your
-                  subscription. Dismiss message
-                </p>
-              </div>
-              <button class="dismiss__button" type="button">
-                Dismiss message
-              </button>
+          </div>
+        </div>
+        <!-- Sign-up form end -->
+        <div class="form__success hidden">
+          <div class="form__content">
+            <div class="form__heading">
+              <h1>Thanks for subscribing!</h1>
             </div>
+            <div class="form__message">
+              <p>
+                A confirmation email has been sent to
+                <strong class="bold">ash@loremcompany.com</strong>. Please open it and click the
+                button inside to confirm your subscription.
+              </p>
+            </div>
+          </div>
+          <div class="form__button">
+            <button class="dismiss__button" type="button">Dismiss message</button>
           </div>
         </div>
       </div>

@@ -70,6 +70,10 @@ h6 {
   display: none;
 }
 
+.bold {
+  font-family: Roboto-Bold;
+}
+
 /* Body */
 body {
   font-family: Roboto-Regular;
@@ -143,6 +147,56 @@ body {
 
 .success__button {
   margin-top: 24px;
+  padding: 16px;
+  background-color: var(--Dark-Slate-Grey);
+  color: var(--White);
+  border: 1px solid var(--Dark-Slate-Grey);
+  border-radius: 7px;
+  width: 100%;
+}
+
+/* Sign Up - Subscribing */
+.form__success {
+  border: 2px solid blue;
+  display: grid;
+  grid-template-rows: 1fr;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-color: var(--White);
+  padding: 24px 16px;
+}
+
+.form__content {
+  align-self: center;
+  padding-bottom: 10rem;
+}
+
+.form__content::before {
+  content: "";
+  background-image: url(/assets/images/icon-success.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+}
+
+.form__heading {
+  margin-top: 40px;
+}
+
+.form__heading h1 {
+  font-family: Roboto-Bold;
+  font-size: 40px;
+}
+
+.form__message {
+  margin-top: 24px;
+}
+
+.dismiss__button {
   padding: 16px;
   background-color: var(--Dark-Slate-Grey);
   color: var(--White);

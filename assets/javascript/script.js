@@ -15,7 +15,7 @@ function dismissSuccessMessage() {
   const form = document.querySelector(".form__success");
   const dismissBtn = document.querySelector(".dismiss__button");
 
-  dismissBtn.addEventListener("click", function (e) {
+  dismissBtn.addEventListener("click", function () {
     form.classList.add("hidden");
   });
 }
